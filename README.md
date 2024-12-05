@@ -25,29 +25,29 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create Virtual Machine
-- Remote 
-- Step 3
+- Launch Virtual Machines
+- test domain controller 
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img width="1710" alt="Screenshot 2024-12-05 at 9 49 31 AM" src="https://github.com/user-attachments/assets/0f45e3f3-51ec-47f8-8cb2-458558ee7e42">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/eb934f01-70a7-4578-a81c-edadfb7359a3">
 
 </p>
 <p>
-
-  When creating a virtual machine; often components of the virtual machine will be created automatically, but for the sake of the lab, i created the (VM'S) components individually. In order I created a resource group, storage account which I placed inside my newly created resource group; in the same region.
-  Lastly i created my virtual machine where I connected it to my previously created resource group, configured the zoning according to the region I chose, used windows 10pro for image, because I will be running Windows in (Remote Desktop), chose a size with at least 2 vcpus for speed and created the (VM).
+  For the sake of the lab I created 2 virtual machines. 1 to act as a computer and the other; the server it will connect to. When creating VM's the components of the machines will often be created automatically, but to make it so there is seamless interaction I created a (Resource Group), and (Virtual Network) that both Virtual machines will share. 
+  My last step in this process was making one of my (VM's) a server and I did that by changing its private ip address from (Dynamic) to (Static) form within the network interface. Now I have 2 uniqe (VM's) to run simulations. (Client1 and DC-1)
+  
 </p>
 <br />
 
 <p>
-![8973D89B-9BC1-472F-B813-50CDC21CFB9A_1_102_o](https://github.com/user-attachments/assets/ae19d21f-443d-4941-9a30-294605abac83)
+https://www.youtube.com/watch?v=hEuB_JQrlN0
 
 </p>
 <p>
-Now that my virtual machine is up and running; I used the ip address to log into it via (Remote Desktop)
+Now that my virtual machines are up and running I use their individual public ip addresses to log into both at the same time. 
 </p>
 <br />
 
