@@ -26,8 +26,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Create Virtual Machine
 - Launch Virtual Machines
-- test domain controller 
-- Step 4
+- Disable firewall
+- Make Vertual Machine Domain 
+- Test 
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -45,16 +46,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 https://www.youtube.com/watch?v=hEuB_JQrlN0
 
+![A8D1C5A8-7C1C-4825-96D9-60E4BE1A3E1F](https://github.com/user-attachments/assets/d50060a8-800d-4504-8d96-387cd403ec91)
+
+
 </p>
 <p>
-Now that my virtual machines are up and running I use their individual public ip addresses to log into both at the same time. 
+Now that my virtual machines are up and running I use their individual public ip addresses to log into both at the same time. Now that both are opened and (Domain Controller) is accessible I disabled the firewall the make the domain reachable (run/wf.msc). Once the firewall is disabled I changed the the other (VM's) (DNS Server) to the private ip address of the Domain (VM). The virtual machines are now connected.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1710" alt="DA26B395-F1B6-4DA8-A4AF-AE53ED4BD5D1" src="https://github.com/user-attachments/assets/3799e604-5020-4fe4-975d-302aab6e92c4">
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now that everything is in order I used (Powershell) to test the connection between the virtual machinees to make sure that one is indeed the server for the other. To test run the test I (ping)ed the domain using its private ip address. The connection is successful 
 </p>
 <br />
