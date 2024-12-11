@@ -32,7 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-  For the sake of the lab I created 2 virtual machines. 1 to act as a computer and the other; the server it will connect to. When creating VM's the components of the machines will often be created automatically, but to make it so there is seamless interaction I created a (Resource Group), and (Virtual Network) that both Virtual machines will share. 
+  For the sake of the lab I created 2 virtual machines. 1 to act as a computer and the other; the server it will connect to. When creating VM's the components of the machines will often be created automatically, but to make it so there is seamless interaction between the a (VM's) I created a (Resource Group) and (Virtual Network) that both Virtual machines will share. 
   My last step in this process was making one of my (VM's) a server and I did that by changing its private ip address from (Dynamic) to (Static) form within the network interface. Now I have 2 uniqe (VM's) to run simulations. (Client1 and DC-1)
   
 </p>
@@ -46,7 +46,7 @@ https://www.youtube.com/watch?v=hEuB_JQrlN0
 
 </p>
 <p>
-Now that my virtual machines are up and running I use their individual public ip addresses to log into both at the same time. Now that both are opened and (Domain Controller) is accessible I disabled the firewall the make the domain reachable (run/wf.msc). Once the firewall is disabled I changed the the other (VM's) (DNS Server) to the private ip address of the Domain (VM). The virtual machines are now connected.
+Now that the virtual machines are up and running I used their individual public ip addresses to log into both via remote desket. With both opened and (Domain Controller) accessible I disabled the firewall the make the domain reachable (run/wf.msc). Once the firewall is disabled I changed the the other (VM's) (DNS Server) to the private ip address of the Domain (VM). The virtual machines are now connected.
 </p>
 <br />
 
@@ -55,6 +55,6 @@ Now that my virtual machines are up and running I use their individual public ip
 
 </p>
 <p>
-Now that everything is in order I used (Powershell) to test the connection between the virtual machinees to make sure that one is indeed the server for the other. To test run the test I (ping)ed the domain using its private ip address. The connection is successful 
+With everything in order I used (Powershell) I tested connectivity between the virtual machinees and verified that one is indeed the domain by using (ping)+ the domain private ip address. The connection is successful 
 </p>
 <br />
