@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1>Active Directory and Domain Server Deployed in the Cloud (Azure)</h1>
+This tutorial outlines the Creation of virtual machines, their deployment and testing of their connection within Azure Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
 
