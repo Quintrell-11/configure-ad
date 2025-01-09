@@ -32,8 +32,8 @@ This tutorial outlines the Creation of virtual machines, their deployment and te
 
 </p>
 <p>
-  For the sake of the lab I created 2 virtual machines. 1 to act as a computer and the other; the server it will connect to. When creating VM's the components of the machines will often be created automatically, but to make it so there is seamless interaction between the a (VM's) I created a (Resource Group) and (Virtual Network) that both Virtual machines will share. 
-  My last step in this process was making one of my (VM's) a server and I did that by changing its private ip address from (Dynamic) to (Static) form within the network interface. Now I have 2 uniqe (VM's) to run simulations. (Client1 and DC-1)
+  I created 2 virtual machines. 1 the computer annd the other the server. For connection purposes I created a (Resource Group) and (Virtual Network) that both Virtual machines will share. 
+  My last step in this process was making one of my (VM's) a server and I did that by changing its private ip address from (Dynamic) to (Static) form within the network interface. There are now 2 distinct virtual machines for the sake of the simulation.
   
 </p>
 <br />
@@ -46,7 +46,7 @@ https://www.youtube.com/watch?v=hEuB_JQrlN0
 
 </p>
 <p>
-Now that the virtual machines are up and running I used their individual public ip addresses to log into both via remote desket. With both opened and (Domain Controller) accessible I disabled the firewall the make the domain reachable (run/wf.msc). Once the firewall is disabled I changed the the other (VM's) (DNS Server) to the private ip address of the Domain (VM). The virtual machines are now connected.
+With the virtual machines up and running I used their individual public ip addresses to log into both via remote desket. With both opened and (Domain Controller) accessible I disabled the firewall the make the domain reachable (run/wf.msc). Once the firewall is disabled I changed the the other (VM's) (DNS Server) to the private ip address of the Domain (VM). The virtual machines are now connected.
 </p>
 <br />
 
